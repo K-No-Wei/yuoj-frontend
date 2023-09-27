@@ -1,11 +1,13 @@
 <template>
   <div id="basiclayout">
-    <a-layout style="height: 400px">
-      <a-layout-header class="header"><GlobalHeader /></a-layout-header>
+    <a-layout style="min-height: 100vh">
+      <a-layout-header class="header">
+        <GlobalHeader />
+      </a-layout-header>
       <a-layout-content class="content">
         <router-view />
       </a-layout-content>
-      <a-layout-footer class="footer">knowei网站</a-layout-footer>
+      <a-layout-footer class="footer">KOJ在线判题</a-layout-footer>
     </a-layout>
   </div>
 </template>
@@ -20,10 +22,12 @@ export default {
 
 <style scoped>
 #basiclayout .header {
-  margin-bottom: 16px;
   box-shadow: #eee 1px 1px 5px;
 }
+
 #basiclayout .content {
+  margin-bottom: 16px;
+  padding: 20px;
   background: linear-gradient(to, right, #eee, #fff);
 }
 
